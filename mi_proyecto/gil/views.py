@@ -6,9 +6,8 @@ from django.template.loader import render_to_string
 from django.utils.html import strip_tags
 from django.shortcuts import render, redirect
 
-def prede(request):
-    return render(request, 'login.html')
-
+def mi_vista(request):
+    return render(request, 'registration/login.html')
 
 def registro(request):
     if request.method == 'POST':
